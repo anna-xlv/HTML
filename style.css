@@ -1,0 +1,47 @@
+body {
+    font-family: monospace;
+    background-color: #fff8f0;
+    color: #f8ddef;
+    padding: 20px;
+}
+
+h1 {
+    color: #9d097f;
+    text-align: center;
+    font-style: oblique;
+    font: impact;
+    
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border: 4px solid #ffffff;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #770046;
+}
+
+a {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
