@@ -1,0 +1,123 @@
+body {
+    font-family: monospace;
+    background-color: #fff8f0;
+    color: #f8ddef;
+    padding: 20px;
+}
+
+h1 {
+    color: #9d097f;
+    text-align: center;
+    font-style: oblique;
+    font: impact;
+    
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border: 4px solid #ffffff;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #770046;
+}
+
+a {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide-container {
+    width: 100vw;
+    height: 100vh;
+    margin: hidden;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    width: 300vw;
+    height: 100vh;
+    display: flex;
+    animation: slideAnimation 9s infinite ease-in-out;
+}
+
+.slider-image {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider-button {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #9f5894;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+    background-color: #770046;
+}
+@keyframes sliderAnimation {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100vw); }
+    66.66% { transform: translateX(-200vw); }
+    100% { transform: translateX(0); }
+
+}
+
+#slider-image1:target ~ .image-container {
+    animation: none;
+    transform: translateX(0);
+}
+
+#slider-image2:target ~ .image-container {
+    animation: none;
+    transform: translateX(-100vw);
+}
+
+#slider-image3:target ~ .image-container {
+    animation: none;
+    transform: translateX(-200vw);
+}
+
+#reset-target:target ~ .image-container {
+    animation: sliderAnimation 9s infinite ease-in-out;
+}
