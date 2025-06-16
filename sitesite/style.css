@@ -45,16 +45,16 @@ a:hover {
     text-decoration: underline;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing:border-box;
 }
 
-.slide-container {
+.slide-container{
     width: 100vw;
     height: 100vh;
-    margin: hidden;
+    margin: 0;
     overflow: hidden;
     position: relative;
 }
@@ -76,7 +76,7 @@ a:hover {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: tranlateX(-50%);
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -87,37 +87,36 @@ a:hover {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: #9f5894;
+    background-color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-.slider-button:hover {
-    background-color: #770046;
-}
-@keyframes sliderAnimation {
-    0% { transform: translateX(0); }
-    33.33% { transform: translateX(-100vw); }
-    66.66% { transform: translateX(-200vw); }
-    100% { transform: translateX(0); }
-
+.slider-button:hover{
+    background-color: #888;
 }
 
-#slider-image1:target ~ .image-container {
+@keyframes slideAnimation {
+    0% { transform: translateX(0);}
+    33.33% { transform: translateX(-200vw);}
+    66.66% { transform: translateX(-100vw);}
+    100% { transform: translateX(0);}
+}
+
+#slider-image1:target ~.image-container {
     animation: none;
     transform: translateX(0);
 }
 
-#slider-image2:target ~ .image-container {
+#slider-image2:target ~.image-container {
     animation: none;
     transform: translateX(-100vw);
 }
 
-#slider-image3:target ~ .image-container {
+#slider-image3:target ~.image-container {
     animation: none;
     transform: translateX(-200vw);
 }
 
-#reset-target:target ~ .image-container {
-    animation: sliderAnimation 9s infinite ease-in-out;
+#reset-target:target ~.image-container {
+    animation: slideAnimation 9s infinite ease-in-out;
 }
