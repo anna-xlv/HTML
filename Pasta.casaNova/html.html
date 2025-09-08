@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Badoo.css/css.css">
+</head>
+<body>
+     
+    <header>
+        <div class="container">
+            <h1>Meu Portífolio Inicial</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#hobies">Hobbies</a></li>
+                    <li><a href="#habili">Habilidades</a></li>
+                    <li><a href="#midia">Midias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="sobre" class="secao">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Olá meu nome é Anna Lara Guido e sou aluno  de tecnologia, faço 
+                    <strong>Analise e Desenvolvimento de Sistemas</strong> no SENAI.
+                    <br> Estou aprendendo bastente coisas nesse curso tecnico,
+                    <br> o sufiente para futuramente começar uma carreira nesse ramo.
+                    <p>
+                        Estou no segundo semestre do primeiro ano do curso, que tem
+                        <br>como atividade avaliativa esse site o qual estou 
+                        <br>programando no momento.
+                    </p>
+                </p>
+                <dl>
+                    <img src="drive-in-my-car.jpg" alt="Drive in my car drunk"  class="imagem-hobbie">
+                </dl>
+
+
+            </section>
+
+            <section id="hobies" class="secao">
+                <h2>Hobbies</h2>
+
+                <ul>
+                    <li>Cozinhar</li>
+                    <li>Jogar</li>
+                    <li>Ceramica fria</li>
+                    <li>Desenhar</li>
+                        <ul>
+                            <li>No papel</li>
+                            <li>Digital</li>
+                        </ul>
+                    <li>Origami</li>
+                </ul>
+                <h3>Top 3 coisas que eu gosto</h3>
+                   <ol>
+                       <li>Animais</li>
+                       <li>biologia</li>
+                       <li>Doces</li>
+                   </ol>
+                <h3>Frases motivacionais</h3>
+                <dl>
+                    <dt>Sucesso</dt>
+                    <dd>"O sucesso é a soma de pequenos esforços repetidos todos os dias"</dd>
+                    <dt>Resultado</dt>
+                    <dd>"Sem ação não há resultado"</dd>
+                </dl>
+            </section>
+
+            <section id="habili" class="secao">
+                <h2>Tabela de Habilidades</h2>
+                <table>
+                    <thead>
+                       <tr>
+                        <th>logo</th>
+                        <th>Tipos de linguagens</th>
+                        <th>Nível</th>
+                        <th>Ano de programação</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><i class="fab fa-css3-alt fa-3x"></i></td>
+                            <td>CSS</td>  
+                            <td>Iniciante</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><i class="fab fa-java fa-3x"></i></td>
+                            <td>Java</td>
+                            <td>Intermediario</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><i class="fab fa-html5 fa-3x"></i></td>
+                            <td>Html</td>
+                            <td>Iniciante</td>
+                            <td>2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="midia" class="secao">
+                <h2>Midia</h2>
+                <h3>Programação</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/mAtkPQO1FcA?si=odG9otk5BdiB9wQK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <p>Tem interesse nos meus projetos? Visite <a href="https://github.com/anna-xlv" target="_blank">Meu Github</a>.</p>
+            </section>
+
+            <section id="contato" class="secao">
+                <h2>Contato</h2>
+                <p>Me mande uma mensagens!</p>
+                <div class="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome_usuario" required>
+                </div>
+                <div class="formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email_usuario" required>
+                </div>
+                <div class="formulario">
+                    <label for="mensagem">Mensagens:</label>
+                    <textarea id="mensagem" name="mensagem_usuario" required></textarea>
+                </div>
+                <button  id="botao" type="submit" onclick="mostrarImagem()">Enviar</button>
+                <div id="tela-imagem">
+                <img src="pentagrama.jpg" alt="Imagem">
+                </div>
+                <script src="js.js"></script>
+
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 - Meu Portífolio. Todos os Direitos Reservados</p>
+    </footer>
+
+</body>
+</html>

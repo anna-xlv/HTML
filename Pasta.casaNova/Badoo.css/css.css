@@ -1,0 +1,173 @@
+body{
+    font-family: cursive;
+    background-color: rgb(0, 0, 0);
+    color: rgb(2, 43, 1);
+    margin: 50px;
+    padding: 0;
+    line-height: 1.5;
+    background: linear-gradient(to left, rgb(208, 252, 167), rgb(195, 248, 182));
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+
+}
+
+header{
+    background-color: rgb(117, 190, 99);
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(46, 77, 37) 3px solid;
+}
+
+header h1{
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    padding: 0 20px;
+}
+
+a:link {
+  color: rgb(112, 238, 54);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+a:visited {
+  color: rgb(175, 252, 159);
+}
+
+
+a:hover {
+  color: rgb(57, 199, 38);
+  text-decoration: underline;
+}
+
+
+a:active {
+  color: rgb(35, 243, 45);
+}
+
+.secao{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 20px;
+    border-bottom: rgb(173, 248, 155) 3px solid;
+    border-left: rgb(149, 238, 154) 5px solid;
+    margin-top: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    margin-left: 10px;
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    border: 5px solid rgb(186, 240, 186); 
+    object-fit: cover; 
+    }
+
+footer{
+    text-align: center;
+}
+
+button{
+    color: rgb(14, 46, 1);
+    background-color: rgb(226, 255, 219);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+button:hover{
+    background-color: rgb(14, 46, 1);
+    color:rgb(226, 255, 219);
+}
+
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 12px;
+    border: 1px solid;
+    text-align: center;
+}
+
+thead{
+    background-color: rgb(160, 243, 165);
+}
+
+.formulario{
+    margin-top: 10px;
+}
+
+.formulario label{
+
+    display: block;
+    margin-bottom: 5px ;
+
+}
+
+.formulario input, textarea{
+    width: 98%;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 10px;
+   
+    
+}
+
+#tela-imagem {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0); 
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#tela-imagem img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  display: inline-block;
+  animation: tremor 0.1s infinite;
+}
+
+  @keyframes tremor {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0, 0); }
+  }
