@@ -161,6 +161,8 @@ thead{
   object-fit: contain;
   display: inline-block;
   animation: tremor 0.1s infinite;
+  border-radius: 0%;
+  border: none;
 }
 
   @keyframes tremor {
