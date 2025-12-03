@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="js/login.js"></script>
+</head>
+ <header>
+    <nav class="navbar">
+        <a href="carros.html">
+    <h1>°˖✧◝ *✧˖°.    • °. ☆.     *   *  Na estrada! *   *     °˖✧◝ *✧˖°.    • °. ☆.      </h1>
+
+      </div>
+      <ul class="menu">
+        <li><a href="carros.html">HOME</a></li>
+        <li><a href="cadastroCarro.html">CADASTRO DE CARROS</a></li>
+        <li><a href="cadastroAgendamento.html">AGENDAMENTO</a></li>
+      </ul>
+      <div class="search-icons">
+        <input type="text" placeholder="Buscar" id="Pesquisa">
+        <div class="sugestao" id="sugestao"></div>
+      </div>
+
+        <div class="icons">
+          <a href="Login.html"><i class="fa-solid fa-circle-user" style="font-size: 20px; color: rgb(255, 255, 255);"></i></a>
+          <span class="icon-favorite">🎔</span>
+          <span class="icon-cart">🛒</span>
+        </div>
+    </nav>
+  </header>
+
+
+
+<body>
+<main class="login-container">
+        <form onsubmit="event.preventDefault(); guardarCadastroLocal();">
+        <h1>Cadastro do cliente</h1>
+
+        <div class="input">
+            <input type="text" placeholder="Nome" required>
+            <i class="fa-solid fa-user" style="font-size: 20px; color: rgb(0, 0, 0);"></i>
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="CPF" id="senha" required>
+            <i class="fa-solid fa-user" style="font-size: 20px; color: rgb(0, 0, 0);"></i>
+        </div>
+
+         <div class="input">
+            <input type="text" placeholder="Telefone" required>
+            <i class="fa-solid fa-user" style="font-size: 20px; color: rgb(0, 0, 0);"></i>
+        </div>
+
+        <div class="input">
+            <input type="email" placeholder="E-mail" id="login" required>
+            <i class="fa-solid fa-envelope" style="font-size: 20px; color: rgb(0, 0, 0);"></i>
+        </div>
+<!-- 
+        <div class="input">
+            <input type="password" placeholder="Senha" required>
+            <i class="fa-solid fa-key" style="font-size: 20px; color: rgb(0, 0, 0);"></i>
+        </div>
+
+        <div class="input">
+            <input type="password" placeholder="Confirmar Senha" required>
+            <i class="fa-solid fa-key" style="font-size: 20px; color: rgb(0, 0, 0);"></i>
+        </div> -->
+
+        <div class="input">
+            <input type="date" placeholder="Data de Nascimento" required>
+            <i class="fa-solid fa-calendar" style="font-size: 20px; color: rgb(0, 0, 0);"></i>
+        </div>
+
+        <button class="logi" type="submit">Cadastrar</button>
+
+            <div class="registro-link">
+                <p>Já tem uma conta <a href="Login.html">Entre</a></p>
+            </div>
+        </form>
+</main>
+<script src="barraPesquisa.js"></script>
+</body>
+
+<footer class="footer">
+  <div class="footer-container">
+
+
+    <div class="footer-column">
+      <h4>Ajuda</h4>
+      <ul>
+        <li><a href="#">Central de Ajuda</a></li>
+        <li><a href="#">Minha Conta</a></li>
+        <li><a href="#">Nossas Lojas</a></li>
+        <li><a href="#">Resgate de Bônus</a></li>
+        <li><a href="#">Trocas e Devoluções</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Políticas</h4>
+      <ul>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Política Entregas, Trocas e Devoluções</a></li>
+        <li><a href="#">Regulamentos</a></li>
+        <li><a href="#">Termos e Condições</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <div class="footer-bottom">
+    <p>
+      Copyright © 2025 Na Estrada!, Inc. Todos os direitos reservados.<br>
+      Na estrada! Brasil Artigos Esportivos Ltda | CNPJ: 45.075.049/0001-41<br>
+      Av. Queiroz Filho, 1560 - Torre Canário - 4º Andar - CEP: 05319-000 - Vila Hamburguesa, São Paulo - SP
+    </p>
+  </div>
+</footer>
+</html>
