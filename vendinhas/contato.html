@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Adote um Amigo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-paw"></i> Adote um Amigo</h1>
+                <p>Encontre seu companheiro para vida</p>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="animais.html">Animais para Adoção</a></li>
+                    <li><a href="contato.html" class="ativo">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="pagina-contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p class="subtitulo">Tem dúvidas sobre adoção? Quer ser voluntário? Entre em contato conosco!</p>
+            
+            <div class="contato-conteudo">
+                <div class="informacoes">
+                    <h3>Informações de Contato</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua dos Animais, 123 - Centro</p>
+                            <p>São Paulo - SP, 01234-567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 9999-8888</p>
+                            <p>(11) 9888-7777 (WhatsApp)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@adoteumamigo.org</p>
+                            <p>adocoes@adoteumamigo.org</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 9h às 18h</p>
+                            <p>Sábado: 9h às 14h</p>
+                            <p>Domingo: Fechado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="formulario">
+                    <h3>Envie uma Mensagem</h3>
+                    <form action="#">
+                        <div class="campo-form">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" placeholder="Digite seu nome">
+                        </div>
+                        
+                        <div class="campo-form">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" placeholder="Digite seu e-mail">
+                        </div>
+                        
+                        <div class="campo-form">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" placeholder="(11) 99999-9999">
+                        </div>
+                        
+                        <div class="campo-form">
+                            <label for="assunto">Assunto:</label>
+                            <select id="assunto">
+                                <option value="">Selecione um assunto</option>
+                                <option value="adocao">Quero adotar um animal</option>
+                                <option value="doacao">Quero doar</option>
+                                <option value="voluntario">Quero ser voluntário</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="campo-form">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="botao">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="info">
+                <h3><i class="fas fa-paw"></i> Adote um Amigo</h3>
+                <p>Conectando animais abandonados com lares amorosos desde 2015.</p>
+                <div class="redes-sociais">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="animais.html">Animais para Adoção</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="contato">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (11) 9999-8888</p>
+                <p><i class="fas fa-envelope"></i> contato@adoteumamigo.org</p>
+                <p><i class="fas fa-map-marker-alt"></i> São Paulo - SP</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Adote um Amigo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
